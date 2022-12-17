@@ -1,0 +1,17 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "java",
+            "name": "Launch Worker",
+            "request": "launch",
+            "mainClass": "org.sw.worker.Worker",
+            "projectName": "worker",
+            "args": "--worker.cron=\"0 0/60 * * * ?\" --worker.user=admin --worker.password=Casco123 --worker.datasource=192.100.230.54:7001 --worker.query=\"Worker:Versioned Segment\" --worker.immediate=true"
+        }
+    ]
+}
